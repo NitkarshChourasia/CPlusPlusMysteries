@@ -26,7 +26,7 @@ ___
 
 
 
-[language_fundamentals] [math] [numbers] 
+[language_fundamentals] [math] [numbers]
 
 
 
@@ -44,5 +44,23 @@ Minutes to seconds conversion calculator helps you to find how many seconds in a
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+int convert(int minutes)
+{
+    return minutes * 60;
+}
+
+int main()
+{
+    // Test cases:
+
+    cout << convert(5) << endl;
+    cout << convert(3) << endl;
+    cout << convert(2) << endl;
+
+    return 0;
+}
