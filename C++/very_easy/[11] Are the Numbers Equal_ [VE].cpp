@@ -21,7 +21,7 @@ _____
 N/A
 
 
-[conditions] [language_fundamentals] [logic] 
+[conditions] [language_fundamentals] [logic]
 
 
 
@@ -44,5 +44,24 @@ Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the 
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+bool isEqual(int num1, int num2)
+{
+    return num1 == num2;
+}
+
+int main()
+{
+    // Test cases:
+    cout << boolalpha << isEqual(5, 6) << endl;
+    cout << boolalpha << isEqual(1, 1) << endl;
+    cout << boolalpha << isEqual(36, 35) << endl;
+    return 0;
+}
+
+// 08-09-2023
+// complete.
