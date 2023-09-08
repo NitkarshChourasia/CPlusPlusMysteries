@@ -26,7 +26,7 @@ ___
 
 
 
-[algorithms] [math] [numbers] 
+[algorithms] [math] [numbers]
 
 
 
@@ -54,5 +54,24 @@ What do Euclid, 12-year-old Einstein, and American President James Garfield have
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+int nextEdge(int side1, int side2)
+{
+    return (side1 + side2) - 1;
+}
+
+int main()
+{
+    // Test cases:
+
+    cout << nextEdge(8, 10) << endl;
+    cout << nextEdge(5, 7) << endl;
+    cout << nextEdge(9, 2) << endl;
+}
+
+// 08-09-2023
+// complete.
