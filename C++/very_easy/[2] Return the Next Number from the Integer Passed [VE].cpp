@@ -27,7 +27,7 @@ ___
 
 
 
-[algebra] [math] [numbers] 
+[algebra] [math] [numbers]
 
 
 
@@ -60,5 +60,25 @@ Although the + operator is often used to add together two values, like in the ex
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+int add1(int num1)
+{
+    return num1 + 1;
+}
+
+int main()
+{
+    // Test cases:
+
+    cout << add1(0) << endl;
+    cout << add1(9) << endl;
+    cout << add1(-3) << endl;
+    return 0;
+}
+
+// 08-09-2023
+// complete.
