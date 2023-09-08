@@ -25,7 +25,7 @@ ___
 
 
 
-[algebra] [bugs] [language_fundamentals] 
+[algebra] [bugs] [language_fundamentals]
 
 
 
@@ -48,5 +48,38 @@ To declare a variable, you need to know what data type it is going to be of and 
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int squaredMulti(int a)
+{
+    return a * a;
+}
+
+int squaredPow(int a)
+{
+    return pow(a, 2);
+}
+
+int main()
+{
+    // Test cases:
+
+    cout << squaredMulti(5) << endl;
+    cout << squaredMulti(9) << endl;
+    cout << squaredMulti(100) << endl;
+
+    cout << endl; // Blank line for readability.
+
+    cout << squaredPow(5) << endl;
+    cout << squaredPow(9) << endl;
+    cout << squaredPow(100) << endl;
+
+    return 0;
+}
+
+// 08-09-2023
+// complete.
