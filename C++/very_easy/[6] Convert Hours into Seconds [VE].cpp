@@ -25,7 +25,7 @@ ___
 
 
 
-[language_fundamentals] [math] [numbers] 
+[language_fundamentals] [math] [numbers]
 
 
 
@@ -43,5 +43,25 @@ We know 1 hour is equal to 3600 seconds, which is required to convert the measur
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int howManySeconds(int hours)
+{
+    return hours * pow(60, 2);
+}
+
+int main()
+{
+    // Test cases:
+
+    cout << howManySeconds(2) << endl;
+    cout << howManySeconds(10) << endl;
+    cout << howManySeconds(24) << endl;
+}
+
+// 08-09-2023
+// complete.
