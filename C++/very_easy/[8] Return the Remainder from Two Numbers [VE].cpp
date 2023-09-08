@@ -29,7 +29,7 @@ ___
 
 
 
-[math] [numbers] 
+[math] [numbers]
 
 
 
@@ -57,5 +57,25 @@ The remainder is the amount "left over" after performing some computation. In ar
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+int remainder(int x, int y)
+{
+    return x % y;
+}
+
+int main()
+{
+    // Test cases.
+
+    cout << remainder(1, 3) << endl;
+    cout << remainder(3, 4) << endl;
+    cout << remainder(-9, 45) << endl;
+    cout << remainder(5, 5) << endl;
+}
+
+// 08-09-2023
+// complete.
