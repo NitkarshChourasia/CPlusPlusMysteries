@@ -21,7 +21,7 @@ _____
 Requires basic calculation of electrical circuits (see Resources for info).
 
 
-[math] [numbers] 
+[math] [numbers]
 
 
 
@@ -44,5 +44,24 @@ Is the rate, per unit time, at which electrical energy is transferred by an elec
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+int circuitPower(int voltage, int current)
+{
+    return voltage * current;
+}
+
+int main()
+{
+    // Test cases:
+    cout << circuitPower(230, 10) << endl;
+    cout << circuitPower(110, 3) << endl;
+    cout << circuitPower(480, 20) << endl;
+    return 0;
+}
+
+// 08-09-2023
+// complete.
