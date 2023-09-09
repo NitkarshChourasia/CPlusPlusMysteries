@@ -28,8 +28,8 @@ Don't forget to return the result.
 -------------------------------------------------------------------
 [Resources]
 _________
-Check if Two Numbers Are Equal Without Using Comparison Operators
-https://www.geeksforgeeks.org/check-two-numbers-equal-without-using-comparison-operators/
+ https://www.geeksforgeeks.org/check-two-numbers-equal-without-us
+ng-comparison-operators/
 Check if two numbers are equal without using comparison operators.
 _________
 _________
