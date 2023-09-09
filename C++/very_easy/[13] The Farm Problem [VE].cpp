@@ -33,7 +33,7 @@ ___
 
 
 
-[algorithms] [language_fundamentals] [math] 
+[algorithms] [language_fundamentals] [math]
 
 
 
@@ -86,5 +86,25 @@ In this article we will discuss different ways to iterate through std::list of o
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+int animals(int chickens, int cows, int pigs)
+{
+    return (chickens * 2) + (cows + pigs) * 4;
+}
+
+int main()
+{
+    // Test cases:
+    cout << animals(2, 3, 5) << endl;
+    cout << animals(1, 2, 3) << endl;
+    cout << animals(5, 2, 8) << endl;
+
+    return 0;
+}
+
+// 09-09-2023
+// complete.
