@@ -1,7 +1,8 @@
 /*
 ####  Is the Number Less than or Equal to Zero?  ####
 
-Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+Create a function that takes a number as its only argument and
+returns true if it's less than or equal to zero, otherwise return false.
 
 
 [Examples]
@@ -26,7 +27,7 @@ ___
 
 
 
-[conditions] [language_fundamentals] [validation] 
+[conditions] [language_fundamentals] [validation]
 
 
 
@@ -49,5 +50,26 @@ Numbers can be classified according to how they are represented or according to 
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+using namespace std;
+
+bool lessThanOrEqualToZero(int num)
+{
+    return num <= 0;
+}
+
+int main()
+{
+    // Test cases:
+
+    cout << boolalpha << lessThanOrEqualToZero(5) << endl;
+    cout << boolalpha << lessThanOrEqualToZero(0) << endl;
+    cout << boolalpha << lessThanOrEqualToZero(2) << endl;
+
+    return 0;
+}
+
+// 08-09-2023
+// complete.
