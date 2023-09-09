@@ -63,7 +63,6 @@ bool lessThanOrEqualToZero(int num)
 int main()
 {
     // Test cases:
-
     cout << boolalpha << lessThanOrEqualToZero(5) << endl;
     cout << boolalpha << lessThanOrEqualToZero(0) << endl;
     cout << boolalpha << lessThanOrEqualToZero(2) << endl;
