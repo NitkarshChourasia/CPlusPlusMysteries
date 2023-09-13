@@ -26,7 +26,7 @@ ___
 
 
 
-[language_fundamentals] [math] 
+[language_fundamentals] [math]
 
 
 
@@ -54,5 +54,24 @@ Convert time hh:mm:ss to decimal hours, decimal minutes and total seconds. Shows
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int convert(int hours, int minutes)
+{
+    return hours * 3600 + minutes * 60;
+}
+
+int main()
+{
+    // Test cases.
+    std::cout << convert(1, 3) << std::endl;
+    std::cout << convert(2, 0) << std::endl;
+    std::cout << convert(0, 0) << std::endl;
+
+    return 0;
+}
+
+// 14-09-2023
+// complete.
