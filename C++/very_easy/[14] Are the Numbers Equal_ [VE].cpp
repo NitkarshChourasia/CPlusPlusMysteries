@@ -21,7 +21,7 @@ _____
 Don't forget to return the result.
 
 
-[conditions] [language_fundamentals] [numbers] [validation] 
+[conditions] [language_fundamentals] [numbers] [validation]
 
 
 
@@ -39,5 +39,35 @@ Check whether two integers are equal or not.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool isSameNum(int num1, int num2)
+{
+    // try
+    // {
+    /* code */
+    if (num1 == num2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    // }
+    // catch (const std::exception &e)
+    // {
+    //     // std::cerr << e.what() << '\n';
+    //     cout << "Please enter int type."
+    // }
+}
+
+int main()
+{
+    std::cout << std::boolalpha << isSameNum(4, 8) << std::endl;
+    std::cout << std::boolalpha << isSameNum(2, 2) << std::endl;
+
+    return 0;
+}
