@@ -25,7 +25,7 @@ ___
 
 
 
-[language_fundamentals] [math] [numbers] 
+[language_fundamentals] [math] [numbers]
 
 
 
@@ -38,5 +38,25 @@ Are used to perform operations on variables and values. In the example below, we
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int points(int twoPointers, int threePointers)
+{
+    return twoPointers * 2 + threePointers * 3;
+}
+
+int main()
+{
+    // Test cases.
+
+    std::cout << points(1, 1) << std::endl;
+    std::cout << points(7, 5) << std::endl;
+    std::cout << points(38, 8) << std::endl;
+
+    return 0;
+}
+
+// 14-09-2023
+// complete.
