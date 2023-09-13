@@ -66,6 +66,7 @@ bool isSameNum(int num1, int num2)
 
 int main()
 {
+    // Test cases.
     std::cout << std::boolalpha << isSameNum(4, 8) << std::endl;
     std::cout << std::boolalpha << isSameNum(2, 2) << std::endl;
 
