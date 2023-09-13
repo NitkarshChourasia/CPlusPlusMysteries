@@ -25,7 +25,7 @@ ___
 
 
 
-[language_fundamentals] [math] 
+[language_fundamentals] [math]
 
 
 
@@ -48,5 +48,31 @@ Enter the length in inches (″) and press the Convert button.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int inchesToFeet(int inches)
+{
+    return inches / 12;
+}
+
+int main()
+{
+    // Test cases.
+    std::cout << inchesToFeet(324) << std::endl;
+    std::cout << inchesToFeet(12) << std::endl;
+    std::cout << inchesToFeet(36) << std::endl;
+
+    std::cout << std::endl; // Blank line for readability.
+
+    // Custom test cases.
+    std::cout << inchesToFeet(11) << std::endl;
+    std::cout << inchesToFeet(1) << std::endl;
+    std::cout << inchesToFeet(7) << std::endl;
+
+    return 0;
+}
+
+// 14-09-2023
+// complete.
