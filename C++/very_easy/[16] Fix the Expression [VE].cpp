@@ -21,7 +21,7 @@ _____
 The bug can be hard to find, so look closely!
 
 
-[bugs] [language_fundamentals] [validation] 
+[bugs] [language_fundamentals] [validation]
 
 
 
@@ -34,5 +34,24 @@ Returns one of two values depending on the result of an expression.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool isSeven(int x)
+{
+    return x == 7;
+}
+
+int main()
+{
+    // Test cases.
+    std::cout << std::boolalpha << isSeven(4) << std::endl;
+    std::cout << std::boolalpha << isSeven(9) << std::endl;
+    std::cout << std::boolalpha << isSeven(7) << std::endl;
+
+    return 0;
+}
+
+// 13-09-2023
+// complete.
