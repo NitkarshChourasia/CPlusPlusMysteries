@@ -19,7 +19,7 @@ _____
 N/A
 
 
-[conditions] [language_fundamentals] [logic] [validation] 
+[conditions] [language_fundamentals] [logic] [validation]
 
 
 
@@ -42,5 +42,23 @@ The ISO/ANSI C++ Standard has added certain new data types to the original C++ s
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool flipIntBool(int boolean)
+{
+    return !boolean;
+}
+
+int main()
+{
+    // Test cases.
+    std::cout << flipIntBool(1) << std::endl;
+    std::cout << flipIntBool(0) << std::endl;
+
+    return 0;
+}
+
+// 14-09-2023
+// complete.
