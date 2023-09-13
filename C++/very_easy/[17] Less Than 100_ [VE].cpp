@@ -23,7 +23,7 @@ _____
 N/A
 
 
-[language_fundamentals] [math] [validation] 
+[language_fundamentals] [math] [validation]
 
 
 
@@ -36,5 +36,24 @@ The C++ language includes all C operators and adds several new operators. Operat
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool lessThan100(int a, int b)
+{
+    return a + b < 100;
+}
+
+int main()
+{
+    // Test cases.
+    std::cout << std::boolalpha << lessThan100(22, 15) << std::endl;
+    std::cout << std::boolalpha << lessThan100(83, 34) << std::endl;
+    std::cout << std::boolalpha << lessThan100(3, 77) << std::endl;
+
+    return 0;
+}
+
+// 13-09-2023
+// complete.
