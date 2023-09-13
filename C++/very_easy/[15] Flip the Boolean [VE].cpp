@@ -24,7 +24,7 @@ ___
 
 
 
-[conditions] [language_fundamentals] [logic] 
+[conditions] [language_fundamentals] [logic]
 
 
 
@@ -57,5 +57,23 @@ This question on SO was asked more than 12-years ago, but, the answer is still r
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool reverse(bool boolean)
+{
+    return !boolean;
+}
+
+int main()
+{
+    // Test cases.
+    std::cout << std::boolalpha << reverse(true) << std::endl;
+    std::cout << std::boolalpha << reverse(false) << std::endl;
+
+    return 0;
+}
+
+// 13-09-2023
+// complete.
