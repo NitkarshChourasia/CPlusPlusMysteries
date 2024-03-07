@@ -25,7 +25,7 @@ ___
 
 
 
-[language_fundamentals] [math] [numbers] 
+[language_fundamentals] [math] [numbers]
 
 
 
@@ -43,5 +43,22 @@ We know 1 hour is equal to 3600 seconds, which is required to convert the measur
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
+#include <iostream>
 
+int hours_to_sec(int hours);
+
+int main()
+{
+    int hours;
+
+    std::cout << "Please enter the hours: ";
+    std::cin >> hours;
+
+    std::cout << "Hours to seconds: " << hours_to_sec(hours) << std::endl;
+}
+
+int hours_to_sec(int hours)
+{
+    return hours * 3600;
+}

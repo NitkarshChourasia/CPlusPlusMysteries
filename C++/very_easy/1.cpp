@@ -26,7 +26,7 @@ ___
 
 
 
-[algebra] [language_fundamentals] [math] [numbers] 
+[algebra] [language_fundamentals] [math] [numbers]
 
 
 
@@ -59,5 +59,21 @@ This sounds like a weird link, but it might actually help you solve this challen
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
+#include <iostream>
 
+int addition(int a, int b);
+
+int main()
+{
+    int a, b;
+    std::cin >> a >> b;
+    std::cout << addition(a, b);
+}
+
+int addition(int a, int b)
+{
+    return a + b;
+}
+
+// how to make a test case for it?

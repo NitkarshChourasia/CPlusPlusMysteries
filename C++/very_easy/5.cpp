@@ -46,3 +46,20 @@ _________
 */
 //Your code should go here:
 
+#include <iostream>
+
+int circuit_power(int voltage, int current);
+
+int main() {
+    int voltage, current;
+    std::cout << "Please enter voltage: ";
+    std::cin >> voltage;
+    std::cout << "Please enter current: ";
+    std::cin >> current;
+
+    std::cout << "Calculated Power: " << circuit_power(voltage, current) << std::endl;
+}
+
+int circuit_power(int voltage, int current) {
+    return voltage * current;
+}

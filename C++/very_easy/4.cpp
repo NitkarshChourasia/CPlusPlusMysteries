@@ -27,7 +27,7 @@ ___
 
 
 
-[geometry] [math] [numbers] 
+[geometry] [math] [numbers]
 
 
 
@@ -60,5 +60,23 @@ In this program, user is asked to enter two numbers (floating point numbers). Th
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
+#include <iostream>
 
+int area_triangle(int base, int height);
+
+int main()
+{
+    int base, height;
+    std::cout << "Please enter base: ";
+    std::cin >> base;
+    std::cout << "Please enter height: ";
+    std::cin >> height;
+
+    std::cout << "Given tri area is: " << area_triangle(base, height) << std::endl;
+}
+
+int area_triangle(int base, int height)
+{
+    return (base + height) / 2;
+}
