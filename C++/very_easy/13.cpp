@@ -33,7 +33,7 @@ ___
 
 
 
-[algorithms] [language_fundamentals] [math] 
+[algorithms] [language_fundamentals] [math]
 
 
 
@@ -86,5 +86,31 @@ In this article we will discuss different ways to iterate through std::list of o
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int t_legsAnimals(int chickens, int cows, int pigs);
+
+int main()
+{
+    int chickens, cows, pigs;
+
+    std::cout << "How many chickens? (int)" << std::endl;
+    std::cin >> chickens;
+
+    std::cout << "How many cows? (int)" << std::endl;
+    std::cin >> cows;
+
+    std::cout << "How many pigs? (int)" << std::endl;
+    std::cin >> pigs;
+
+    std::cout << "Total legs for all animals present: " << t_legsAnimals(chickens, cows, pigs) << std::endl;
+}
+
+int t_legsAnimals(int chickens, int cows, int pigs)
+{
+
+    int result = chickens * 2 + (cows + pigs) * 4;
+    return result;
+}

@@ -26,7 +26,7 @@ ___
 
 
 
-[geometry] [language_fundamentals] [math] [numbers] 
+[geometry] [language_fundamentals] [math] [numbers]
 
 
 
@@ -49,5 +49,25 @@ A quadrilateral with four right angles. It can also be defined as an equiangular
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
+#include <iostream>
 
+int find_perimeter(int length, int width);
+
+int main()
+{
+    int length, width;
+
+    std::cout << "Please enter length: ";
+    std::cin >> length;
+
+    std::cout << "Please enter width: ";
+    std::cin >> width;
+
+    std::cout << "Perimeter: " << find_perimeter(length, width) << std::endl;
+}
+
+int find_perimeter(int length, int width)
+{
+    return (length + width) * 2;
+}

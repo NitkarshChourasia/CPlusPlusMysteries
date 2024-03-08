@@ -21,7 +21,7 @@ _____
 N/A
 
 
-[conditions] [language_fundamentals] [logic] 
+[conditions] [language_fundamentals] [logic]
 
 
 
@@ -44,5 +44,37 @@ Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the 
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
+#include <iostream>
 
+bool isEqual(int a, int b);
+
+int main()
+{
+
+    int a, b;
+
+    std::cout << "Please enter x: ";
+    std::cin >> a;
+
+    std::cout << "Please enter y: ";
+    std::cin >> b;
+
+    bool result = isEqual(a, b);
+
+    std::cout << std::boolalpha;
+    if (result)
+    {
+        std::cout << "The following is " << result << " for equality." << std::endl;
+    }
+    else
+    {
+        std::cout << "The following is " << result << " for equality." << std::endl;
+    }
+}
+
+bool isEqual(int a, int b)
+{
+    bool result = (a == b);
+    return result;
+}

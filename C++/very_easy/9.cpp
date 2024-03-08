@@ -25,7 +25,7 @@ ___
 
 
 
-[algebra] [bugs] [language_fundamentals] 
+[algebra] [bugs] [language_fundamentals]
 
 
 
@@ -48,5 +48,23 @@ To declare a variable, you need to know what data type it is going to be of and 
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+#include <cmath>
+int squared(int x);
+
+int main()
+{
+
+    int x;
+    std::cout << "**Program to square a number**" << std::endl;
+    std::cout << "Please enter x: ";
+    std::cin >> x;
+    std::cout << "Your squared output : " << squared(x) << std::endl;
+}
+
+int squared(int x)
+{
+    return pow(x, 2);
+}

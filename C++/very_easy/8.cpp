@@ -29,7 +29,7 @@ ___
 
 
 
-[math] [numbers] 
+[math] [numbers]
 
 
 
@@ -57,5 +57,25 @@ The remainder is the amount "left over" after performing some computation. In ar
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
+#include <iostream>
 
+int remainderr(int a, int b);
+
+int main()
+{
+
+    int a, b;
+    std::cout << "Please enter x: ";
+    std::cin >> a;
+
+    std::cout << "Please enter y: ";
+    std::cin >> b;
+
+    std::cout << "Remainder: " << remainderr(a, b) << std::endl;
+}
+
+int remainderr(int a, int b)
+{
+    return a % b;
+}

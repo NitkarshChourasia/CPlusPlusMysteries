@@ -26,7 +26,7 @@ ___
 
 
 
-[algorithms] [math] [numbers] 
+[algorithms] [math] [numbers]
 
 
 
@@ -54,5 +54,26 @@ What do Euclid, 12-year-old Einstein, and American President James Garfield have
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int next_edge(int side1, int side2);
+
+int main()
+{
+
+    int side1, side2;
+    std::cout << "Please enter Side 1: ";
+    std::cin >> side1;
+
+    std::cout << "Please enter Side 2: ";
+    std::cin >> side2;
+
+    std::cout << "Your Next Edge: " << next_edge(side1, side2) << std::endl;
+}
+
+int next_edge(int side1, int side2)
+{
+    return (side1 + side2) - 1;
+}

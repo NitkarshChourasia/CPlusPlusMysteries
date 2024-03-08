@@ -26,7 +26,7 @@ ___
 
 
 
-[conditions] [language_fundamentals] [validation] 
+[conditions] [language_fundamentals] [validation]
 
 
 
@@ -49,5 +49,32 @@ Numbers can be classified according to how they are represented or according to 
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+bool lessThanOrEqualZero(long int a);
+
+int main()
+{
+    std::cout << "** Program to test whether number less than or equal to zero **" << std::endl;
+    int a;
+    std::cout << "Please enter a number to test: ";
+    std::cin >> a;
+
+    bool result = lessThanOrEqualZero(a);
+
+    if (result)
+    {
+        std::cout << a << " is less than or equal to zero." << std::endl;
+    }
+
+    else
+    {
+        std::cout << a << " not less than or equal zero." << std::endl;
+    }
+}
+
+bool lessThanOrEqualZero(long int a)
+{
+    return a <= 0;
+}
