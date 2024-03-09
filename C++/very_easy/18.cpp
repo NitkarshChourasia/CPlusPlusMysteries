@@ -26,7 +26,7 @@ ___
 
 
 
-[language_fundamentals] [math] 
+[language_fundamentals] [math]
 
 
 
@@ -54,5 +54,36 @@ Convert time hh:mm:ss to decimal hours, decimal minutes and total seconds. Shows
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+int convert2Sec(int hours, int minutes);
+
+int main()
+{
+
+    // Initialising variables
+    int hours, minutes;
+
+    // Take hour(s) as input from user
+    std::cout << "Please enter hour(s): ";
+    std::cin >> hours;
+
+    // Take minute(s) as input from user
+    std::cout << "Please enter minute(s): ";
+    std::cin >> minutes;
+
+    std::cout << convert2Sec(hours, minutes) << std::endl;
+}
+
+int convert2Sec(int hours, int minutes)
+{
+
+    int hours2Sec = hours * 3600;
+    int mins2Sec = minutes * 60;
+    int result = hours2Sec + mins2Sec;
+    return result;
+}
+
+// Works just fine
+// TODO: Just think whether the print result needs string interpolation or not

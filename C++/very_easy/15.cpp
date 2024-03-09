@@ -24,7 +24,7 @@ ___
 
 
 
-[conditions] [language_fundamentals] [logic] 
+[conditions] [language_fundamentals] [logic]
 
 
 
@@ -57,5 +57,31 @@ This question on SO was asked more than 12-years ago, but, the answer is still r
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool reverseBool(bool flag);
+
+int main()
+{
+
+    bool inputFlag;
+
+    std::cout << "Please enter a bool value: ";
+    std::cin >> inputFlag;
+
+    std::cout << std::boolalpha;
+    std::cout << reverseBool(inputFlag) << std::endl;
+
+    // ? Don't I have to return the program?
+}
+
+bool reverseBool(bool flag)
+{
+    return !flag;
+}
+
+// It works perfectly for 1 and 0 inputs.
+// It doesn't works perfectly for true or false or any other alpha-numeric characters.
+// It always outputs true as it is not empty which is triggered as true, indeed.

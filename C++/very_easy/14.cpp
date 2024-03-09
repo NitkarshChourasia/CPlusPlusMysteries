@@ -21,7 +21,7 @@ _____
 Don't forget to return the result.
 
 
-[conditions] [language_fundamentals] [numbers] [validation] 
+[conditions] [language_fundamentals] [numbers] [validation]
 
 
 
@@ -39,5 +39,34 @@ Check whether two integers are equal or not.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+// Prototype function
+bool isSameNum(int x, int y);
+
+int main()
+{
+    // Initialise input variables
+    int a, b;
+    // Ask for first input
+    std::cout << "Please enter num1: ";
+    std::cin >> a;
+    // Ask for second input
+    std::cout << "Please enter num2: ";
+    std::cin >> b;
+
+    // Print result
+    std::cout << std::boolalpha;
+    std::cout << isSameNum(a, b) << std::endl;
+}
+
+bool isSameNum(int x, int y)
+{
+    return x == y;
+}
+
+// Failed at different validation
+// Failed to string interpolate the result
+// Failed to press user (while loop) for taking the input from the user

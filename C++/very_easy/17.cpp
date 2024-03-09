@@ -23,7 +23,7 @@ _____
 N/A
 
 
-[language_fundamentals] [math] [validation] 
+[language_fundamentals] [math] [validation]
 
 
 
@@ -36,5 +36,33 @@ The C++ language includes all C operators and adds several new operators. Operat
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+bool lessThan100(int x, int y);
+
+// ? Why int is used in the main and not anything else?
+// like void, bool, etc,...
+int main()
+{
+    // Initialising varibles
+    int x, y;
+    // Taking num1 from user
+    std::cout << "Enter num1: ";
+    std::cin >> x;
+
+    // Taking num2 from user
+    std::cout << "Enter num2: ";
+    std::cin >> y;
+
+    // Output bool flag as str
+    std::cout << std::boolalpha;
+
+    // Print results
+    std::cout << lessThan100(x, y) << std::endl;
+}
+
+bool lessThan100(int x, int y)
+{
+    return x + y < 100;
+}

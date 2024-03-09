@@ -25,7 +25,7 @@ ___
 
 
 
-[language_fundamentals] [math] 
+[language_fundamentals] [math]
 
 
 
@@ -48,5 +48,37 @@ Enter the length in inches (″) and press the Convert button.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int inchs2Feets(int inches);
+
+int main()
+{
+
+    // Initialising variable
+    int inches;
+
+    // Print inches input prompt
+    std::cout << "Please enter inches: ";
+    // Take inches input
+    std::cin >> inches;
+
+    std::cout << inchs2Feets(inches) << std::endl;
+}
+
+int inchs2Feets(int inches)
+{
+    if (inches >= 12)
+    {
+        return inches / 12;
+    }
+    else
+    {
+        return inches;
+    }
+}
+
+// TODO: string interpolation for feets and inches
+// TODO: testing should be done for all the C++ programs not only this program
