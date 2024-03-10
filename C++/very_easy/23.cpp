@@ -26,7 +26,7 @@ ___
 
 
 
-[math] [numbers] [validation] 
+[math] [numbers] [validation]
 
 
 
@@ -49,5 +49,33 @@ Arithmetic operators are used to perform common mathematical operations.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+// Function prototyping
+bool divisibleBy5(int x);
+
+int main()
+{
+
+    // Initialising the variable
+    int x;
+
+    // Prompt user for input
+    std::cout << "Enter a num: ";
+    // Take input from user
+    std::cin >> x;
+    // ! What about validation, here?
+
+    // To output bool in alphachars
+    std::cout << std::boolalpha;
+
+    // Print result
+    std::cout << divisibleBy5(x) << std::endl;
+}
+
+bool divisibleBy5(int x)
+{
+    // return results
+    return x % 5 == 0;
+}

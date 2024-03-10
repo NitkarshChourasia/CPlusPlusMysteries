@@ -25,7 +25,7 @@ ___
 
 
 
-[language_fundamentals] [math] [numbers] 
+[language_fundamentals] [math] [numbers]
 
 
 
@@ -38,5 +38,39 @@ Are used to perform operations on variables and values. In the example below, we
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+int basketballPoints(int twoP, int threeP);
+
+int main()
+{
+
+    // Initialising variables
+    int twoP, threeP;
+
+    // Input prompt for two pointer score
+    std::cout << "Please input Two Pointer Score: " << std::endl;
+    // Input from the user
+    std::cin >> twoP;
+
+    // Input prompt for three pointer score
+    std::cout << "Please input Three Pointer Score: " << std::endl;
+    // Input from the user
+    std::cin >> threeP;
+
+    // Print result
+    std::cout << "Total score: " << basketballPoints(twoP, threeP) << std::endl;
+}
+
+int basketballPoints(int twoP, int threeP)
+{
+
+    int result = twoP * 2 + threeP * 3;
+    return result;
+}
+
+// TODO
+// String interpolation
+// Testing the program

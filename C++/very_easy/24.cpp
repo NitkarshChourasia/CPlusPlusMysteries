@@ -26,7 +26,7 @@ ___
 
 
 
-[bugs] [functional_programming] [language_fundamentals] [strings] 
+[bugs] [functional_programming] [language_fundamentals] [strings]
 
 
 
@@ -49,5 +49,32 @@ Variables are containers for storing data values.
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+#include <string>
+
+// Functiono prototyping
+std::string nameString(std::string yourName);
+
+int main()
+{
+    // Initialising variable
+    std::string yourName;
+
+    // Prompt user for name
+    std::cout << "Enter name: ";
+    // Take name input from user
+    std::cin >> yourName;
+
+    // Print results
+    std::cout << "Concat String Results: " << nameString(yourName) << std::endl;
+}
+
+std::string nameString(std::string yourName)
+{
+
+    std::string result = yourName + "Nitkarsh";
+
+    return result;
+}

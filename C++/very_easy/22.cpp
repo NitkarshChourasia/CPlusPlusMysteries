@@ -27,7 +27,7 @@ _____
 A profitable gamble is a game that yields a positive net profit, where net profit is calculated in the following manner: net_outcome = probability_of_winning * prize - cost_of_playing.
 
 
-[conditions] [math] [validation] 
+[conditions] [math] [validation]
 
 
 
@@ -40,5 +40,38 @@ All variables use data-type during declaration to restrict the type of data to b
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+// Function prototyping
+bool profitableGamble(float prob, int prize, int pay);
+
+int main()
+{
+
+    // Initialise variables
+    int prize, pay;
+    float prob;
+
+    // Take probability input
+    std::cout << "Enter probablity: ";
+    std::cin >> prob;
+
+    // Take prize price input
+    std::cout << "Enter prize price: ";
+    std::cin >> prize;
+
+    // Take pay price given input
+    std::cout << "Enter pay price: ";
+    std::cin >> pay;
+
+    // To output bool in alphachars then numerics
+    std::cout << std::boolalpha;
+
+    std::cout << profitableGamble(prob, prize, pay) << std::endl;
+}
+
+bool profitableGamble(float prob, int prize, int pay)
+{
+    return prob * prize > pay;
+}

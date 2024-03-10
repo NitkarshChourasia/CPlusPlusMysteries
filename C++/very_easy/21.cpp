@@ -19,7 +19,7 @@ _____
 N/A
 
 
-[conditions] [language_fundamentals] [logic] [validation] 
+[conditions] [language_fundamentals] [logic] [validation]
 
 
 
@@ -42,5 +42,28 @@ The ISO/ANSI C++ Standard has added certain new data types to the original C++ s
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+
+bool flipIntBool(bool x);
+
+int main()
+{
+
+    // Initialising bool flag
+    bool x;
+
+    // Ask for flag input - prompt
+    std::cout << "Please input a bool value in num (0/1): ";
+    // Take and store the bool input
+    std::cin >> x;
+
+    // Print result
+    std::cout << "Output: " << flipIntBool(x) << std::endl;
+}
+
+bool flipIntBool(bool x)
+{
+    return !x;
+}

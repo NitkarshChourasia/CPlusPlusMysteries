@@ -24,7 +24,7 @@ ___
 
 
 
-[bit_operations] [conditions] [logic] [strings] 
+[bit_operations] [conditions] [logic] [strings]
 
 
 
@@ -52,5 +52,37 @@ As explained in the Variables chapter, a variable in C++ must be a specified dat
 _________
 
 */
-//Your code should go here:
+// Your code should go here:
 
+#include <iostream>
+#include <string>
+
+// Function prototyping
+std::string boolToString(bool flag);
+
+int main()
+{
+
+    // Initialising bool flag variable
+    bool flag;
+
+    // Prompt user to enter a bool flag value
+    std::cout << "Enter bool value: ";
+    // Take and store user input
+    std::cin >> flag;
+
+    // Print results
+    std::cout << boolToString(flag);
+}
+
+std::string boolToString(bool flag)
+{
+    return flag ? "True" : "False";
+}
+
+// * for 0 and 1 it is functioning alright!
+// ! In text prompts it is not functioning as it should have been functioning!
+// ! For both the input types it outputs false
+// ! I think it has to do with type of bool flag variable which is bool type
+
+// ! ERROR in INPUT
